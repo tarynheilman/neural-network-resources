@@ -7,8 +7,15 @@ This folder will contain resources more or less related to topics that apply gen
 Fairly short for now, but it'll be built out over time. 
 
 [Books](#books)
+[Papers](#papers)
 
 ### Books [[Commentary](books_commentary)]
 
 [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) - Michael Nielsen
+
+### Papers [[Commentary](papers_commentary)]
+
+#### ** Dropout ** 
+
+1. [Dropout:  A Simple Way to Prevent Neural Networks from Overfitting](http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)   
 
