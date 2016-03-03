@@ -8,7 +8,7 @@ Fairly short for now, but it'll be built out over time.
 
 [Books](#books)
 
-### Books
+### Books [[Commentary](books_commentary)]
 
 [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) - Michael Nielsen
 
