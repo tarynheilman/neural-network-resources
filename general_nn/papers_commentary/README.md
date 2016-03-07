@@ -33,6 +33,10 @@
 
     * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#sigmoid_neurons)
 
+    This isn't a paper either, but Neilsen does well in explaining the jump from Perceptron units to Sigmoid units. He does a good job at motivating their use - they allow us to have our output operate on a more continuous spectrum, rather than just being a 0 or 1 (as is true when we use the Perceptron). This gives us the opportunity to build neural networks that learn more effectively.  
+
+[@sallamander](https://github.com/sallamander)
+
 
  3. ** RelU Units ** 
 
