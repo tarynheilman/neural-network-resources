@@ -22,29 +22,29 @@
 
  1. ** Perceptron Units ** 
 
-    * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#perceptrons)
+  * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#perceptrons)
 
-    This isn't quite a paper, but in his book Nielsen gives a clear definition of what a perceptron unit looks like and how it works. He builds the foundation of activation units well before jumping into sigmoid Units (see below). 
+  This isn't quite a paper, but in his book Nielsen gives a clear definition of what a perceptron unit looks like and how it works. He builds the foundation of activation units well before jumping into sigmoid units (see below). 
 
-[@sallamander](https://github.com/sallamander)
+  [@sallamander](https://github.com/sallamander)
 
 
  2. ** Sigmoid Units ** 
 
-    * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#sigmoid_neurons)
+  * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#sigmoid_neurons)
 
-    This isn't a paper either, but Neilsen does well in explaining the jump from perceptron units to sigmoid units. He does a good job at motivating their use - they allow us to have our output operate on a more continuous spectrum, rather than just being a 0 or 1 (as is true when we use the perceptron). This gives us the opportunity to build neural networks that learn more effectively.  
+  This isn't a paper either, but Nielsen does well in explaining the jump from perceptron units to sigmoid units. He does a good job at motivating their use - they allow us to have our output operate on a more continuous spectrum, rather than just being a 0 or 1 (as is true when we use the perceptron). This gives us the opportunity to build neural networks that learn more effectively.  
 
-[@sallamander](https://github.com/sallamander)
+  [@sallamander](https://github.com/sallamander)
 
 
  3. ** RelU Units ** 
 
-    * [Rectifier Nonlinearities Improve Neural Network Acoustic Models](ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
+  * [Rectifier Nonlinearities Improve Neural Network Acoustic Models](ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
 
-    I think this paper does the best job in terms of the coverage of discussing the motivation behind using RelU activation units over something from the sigmoid family (sigmoid or tanh). If you'd like one of the first or most commonly cited papers, then you can check out [Rectified Linear Units Improve Restricted Boltzmann Machines](Rectified Linear Units Improve Restricted Boltzmann Machines). Another commonly cited paper, [Deep Sparse Rectifier Neural Networks](http://www.jmlr.org/proceedings/papers/v15/glorot11a/glorot11a.pdf), gives a great discussion of the network sparsity that the use of RelU activation units leads to.  
+  I think this paper does the best job in terms of the coverage of discussing the motivation behind using RelU activation units over something from the sigmoid family (sigmoid or tanh). If you'd like one of the first or most commonly cited papers, then you can check out [Rectified Linear Units Improve Restricted Boltzmann Machines](Rectified Linear Units Improve Restricted Boltzmann Machines). Another commonly cited paper, [Deep Sparse Rectifier Neural Networks](http://www.jmlr.org/proceedings/papers/v15/glorot11a/glorot11a.pdf), gives a great discussion of the network sparsity that the use of RelU activation units leads to.  
 
-    My takeaways: 
-        * The differing derivative of the RelU (it's either 0 or 1) helps to avoid the problem of a vanishing gradient. This allows more effective and efficient training of neural networks (as does the fact that the derivative is either 1 or 0, and in that regard is incredibly easy to compute). 
-        * Because of the saturation of RelU units at 0 (e.g. all output for negative inputs is 0), RelU units allow for sparse representations of our neural networks (e.g. some hidden units are not activated). This helps prevent overfitting. 
-        * Because RelU units do not saturate in the positive spectrum (while Sigmoid units do), they allow for continued learning for those units that have positive value inputs. 
+  My takeaways: 
+   * The differing derivative of the RelU (it's either 0 or 1) helps to avoid the problem of a vanishing gradient. This allows more effective and efficient training of neural networks (as does the fact that the derivative is either 1 or 0, and in that regard is incredibly easy to compute). 
+   * Because of the saturation of RelU units at 0 (e.g. all output for negative inputs is 0), RelU units allow for sparse representations of our neural networks (e.g. some hidden units are not activated). This helps prevent overfitting. 
+   * Because RelU units do not saturate in the positive spectrum (while Sigmoid units do), they allow for continued learning for those units that have positive valued inputs. 

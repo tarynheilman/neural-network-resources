@@ -32,5 +32,5 @@ Fairly short for now, but it'll be built out over time.
 
  3. ** RelU Units ** 
 
-    * [Rectifier Nonlinearities Improve Neural Network Acoustic Models](ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
+    * [Rectifier Nonlinearities Improve Neural Network Acoustic Models](http://ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
 
