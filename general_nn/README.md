@@ -22,8 +22,15 @@ Fairly short for now, but it'll be built out over time.
 #### ** Activation Units ** 
 
  1. ** Perceptron Units ** 
+
     * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#perceptrons)
 
 
- 1. ** Sigmoid Units ** 
+ 2. ** Sigmoid Units ** 
+
     * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#sigmoid_neurons)
+
+ 3. ** RelU Units ** 
+
+    * [Rectifier Nonlinearities Improve Neural Network Acoustic Models](ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
+
