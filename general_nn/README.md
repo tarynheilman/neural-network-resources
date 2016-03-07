@@ -21,5 +21,9 @@ Fairly short for now, but it'll be built out over time.
 
 #### ** Activation Units ** 
 
+ 1. ** Perceptron Units ** 
+    * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#perceptrons)
+
+
  1. ** Sigmoid Units ** 
     * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#sigmoid_neurons)
