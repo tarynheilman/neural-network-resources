@@ -6,14 +6,14 @@ This folder will contain resources more or less related to topics that apply gen
 
 Fairly short for now, but it'll be built out over time. 
 
-[Books](#books)
-[Papers](#papers)
+[Books](#books-commentary)  
+[Papers](#papers-commentary)
 
-### Books [[Commentary](books_commentary)]
+###Books [[Commentary](books_commentary)]
 
 * [Neural Networks and Deep Learning: Chapters 1 -5](http://neuralnetworksanddeeplearning.com/) - Michael Nielsen
 
-### Papers [[Commentary](papers_commentary)]
+###Papers [[Commentary](papers_commentary)]
 
 #### ** Dropout ** 
 
@@ -34,3 +34,6 @@ Fairly short for now, but it'll be built out over time.
 
     * [Rectifier Nonlinearities Improve Neural Network Acoustic Models](http://ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
 
+ 4. ** Maxout Units ** 
+
+    * [Maxout Networks](http://arxiv.org/pdf/1302.4389v4.pdf)

@@ -51,3 +51,14 @@
 
    [@sallamander](https://github.com/sallamander)
 
+ 4. ** Maxout Units ** 
+
+  * [Maxout Networks](http://arxiv.org/pdf/1302.4389v4.pdf)
+
+  This paper discusses an intriguing activation function wherein the *max* of every weighted input at each hidden node is taken as the output. This maxout activation is meant to be used in conjunction with dropout, motivated by the idea that it should enhance the effective model averaging that dropout provides. 
+
+  My takeaways: 
+   * Dropout basically allows us to perform model averaging, and is going to be most effective when the models we are averaging are pretty different from one another. Maxout units are going to facilitate the creation of models that are fairly different from each other (relative to the use of RelU) as a result of the activation functions having more variable outputs (again relative to RelU). 
+
+   [@sallamander](https://github.com/sallamander)
+

@@ -6,9 +6,9 @@ This folder will contain resources more or less related to topics that apply eit
 
 Fairly short for now, but it'll be built out over time. 
 
-[Papers](#papers)
+[Papers](#papers-commentary)
 
-### Papers [[Commentary](papers_commentary)]
+###Papers [[Commentary](papers_commentary)]
 
 #### ** Must Reads ** 
 
