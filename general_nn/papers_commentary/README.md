@@ -18,29 +18,33 @@
 
 [@sallamander](https://github.com/sallamander)
 
+#### ** Activation Units ** 
 
-#### ** Convolutional Neural Networks **
+ 1. ** Perceptron Units ** 
 
-1. [ImageNet Classification with Deep Convolutional Neural Networks](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+  * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#perceptrons)
 
-The ImageNet Large Scale Visual Recognition Challenge ([ILSVRC](http://image-net.org/challenges/LSVRC/)) has been running since 2010 and produces revolutionary insights into computer vision year after year. This 2012 paper and corresponding model architecture (AlexNet, named after the lead author, Alex Krizhevsky) ushered in the era of deep neural networks for image classification. AlexNet shattered the records set by raw vector-based methods in 2010 and 2011, and every winning method since has utilized deep learning in some fashion. 
+  This isn't quite a paper, but in his book Nielsen gives a clear definition of what a perceptron unit looks like and how it works. He builds the foundation of activation units well before jumping into sigmoid units (see below). 
 
-AlexNet by the numbers:
-* 5 convolutional layers & 3 fully connected layers.
-* 60 million parameters & 650,000 neurons.
-* 15.3% top-5 test error rate in ISLVRC; second place was at 26.2%.
+  [@sallamander](https://github.com/sallamander)
 
-Reasons for success:
-* ReLU activations rather than the previous standard tanh, providing:
-  * A non-saturating non-linearity that significantly enhances training speed (tanh saturates easily).
-  * An efficient method for sparsifying networks (tanh does not lead to sparse networks).
-* Brightness normalization after certain ReLU layers.
-* Overlapping pooling (stride=2px, poolsize=3x3), making it harder to overfit the training data.
-* Dropout (only recently developed) on the first two fully connected layers, reducing overfitting, but approximately doubling the number of iterations needed to converge.
 
-Limitations:
-* Utilized a large convolutional kernel (11x11) and a long stride (4 pixels) on the first layer, significantly reducing dimensionality and effectively throwing away information. Since 2012, top CNNs tend to use small (3x3 or 5x5) kernels with a stride of 1 pixel.
-* Not very "deep" by today's standards.
+ 2. ** Sigmoid Units ** 
 
-[@jliemansifry](https://github.com/jliemansifry)
+  * [Neural Networks and Deep Learning: Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html#sigmoid_neurons)
 
+  This isn't a paper either, but Nielsen does well in explaining the jump from perceptron units to sigmoid units. He does a good job at motivating their use - they allow us to have our output operate on a more continuous spectrum, rather than just being a 0 or 1 (as is true when we use the perceptron). This gives us the opportunity to build neural networks that learn more effectively.  
+
+  [@sallamander](https://github.com/sallamander)
+
+
+ 3. ** RelU Units ** 
+
+  * [Rectifier Nonlinearities Improve Neural Network Acoustic Models](ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
+
+  I think this paper does the best job in terms of the coverage of discussing the motivation behind using RelU activation units over something from the sigmoid family (sigmoid or tanh). If you'd like one of the first or most commonly cited papers, then you can check out [Rectified Linear Units Improve Restricted Boltzmann Machines](Rectified Linear Units Improve Restricted Boltzmann Machines). Another commonly cited paper, [Deep Sparse Rectifier Neural Networks](http://www.jmlr.org/proceedings/papers/v15/glorot11a/glorot11a.pdf), gives a great discussion of the network sparsity that the use of RelU activation units leads to.  
+
+  My takeaways: 
+   * The differing derivative of the RelU (it's either 0 or 1) helps to avoid the problem of a vanishing gradient. This allows more effective and efficient training of neural networks (as does the fact that the derivative is either 1 or 0, and in that regard is incredibly easy to compute). 
+   * Because of the saturation of RelU units at 0 (e.g. all output for negative inputs is 0), RelU units allow for sparse representations of our neural networks (e.g. some hidden units are not activated). This helps prevent overfitting. 
+   * Because RelU units do not saturate in the positive spectrum (while Sigmoid units do), they allow for continued learning for those units that have positive valued inputs. 
