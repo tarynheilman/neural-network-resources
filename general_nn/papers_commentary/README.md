@@ -16,7 +16,7 @@
  * It helps prevent the hidden units in our network from co-adapting, and instead leads to hidden units learning more useful features on their own (e.g. irrespective of what other hidden units are learning). If we look at the activations of the nodes in each layer of the net with and without dropout, we see that with dropout, we have fewer nodes that have high activation (suggesting that fewer nodes are learning at any given time, helping to prevent nodes from co-adapting). 
 * It is implemented by randomly dropping out some subset of nodes/neurons in each layer, where we can specify the probability `p` of dropout in each layer.  
 
-[@sallamander](https://github.com/sallamander)
+ [@sallamander](https://github.com/sallamander)
 
 #### ** Activation Units ** 
 
@@ -48,3 +48,6 @@
    * The differing derivative of the RelU (it's either 0 or 1) helps to avoid the problem of a vanishing gradient. This allows more effective and efficient training of neural networks (as does the fact that the derivative is either 1 or 0, and in that regard is incredibly easy to compute). 
    * Because of the saturation of RelU units at 0 (e.g. all output for negative inputs is 0), RelU units allow for sparse representations of our neural networks (e.g. some hidden units are not activated). This helps prevent overfitting. 
    * Because RelU units do not saturate in the positive spectrum (while Sigmoid units do), they allow for continued learning for those units that have positive valued inputs. 
+
+   [@sallamander](https://github.com/sallamander)
+
